@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: stg
+---
+spring:
+  profiles: stg
+config:
+  fileUrl: C:\\Users\\won\\Desktop\\download\\result.txt
+  storageUrl: udp-stg-ehn-v001/eventhub01/
+  storageConnectionString: DefaultEndpointsProtocol=https;AccountName=udpstgsav001com01;AccountKey=0fb7g3Du0FZRbq8j32L3HgQp81l2BWWJwM6sCX2ci3YNVtMkVBzNJ1f3kXAcJA4HSxg8t5Dmvh1M2YHtBTVuYg==;
+  
+---
+spring:
+  profiles: prd
+config:
+  fileUrl: C:\\Users\\won\\Desktop\\download\\result.txt
+  storageUrl: udp-prd-ehn-v001/eventhub01/
+  storageConnectionString: DefaultEndpointsProtocol=https;AccountName=udpprdsav001com01;AccountKey=ZFmjlwQ9GkDbqu1YBW2CrteKv/b15aNtp8FbvpDq8yOnfJTzqo08mEdr73caJclyM+qddBrdgZWtsugqqCuBwg==;
