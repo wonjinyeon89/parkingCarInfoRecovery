@@ -32,6 +32,7 @@ public class EventHub01Controller {
 	
 	static final Logger logger = LoggerFactory.getLogger(EventHub01Controller.class);
 	
+	
 	@Autowired
 	EventHub01Service eventHub01Service;
 	
