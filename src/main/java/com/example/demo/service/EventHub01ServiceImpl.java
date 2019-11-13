@@ -56,15 +56,15 @@ public class EventHub01ServiceImpl implements EventHub01Service {
 						}catch(Exception e) {
 							logger.info("jsonObject Excepton[{}]", json);
 						}
-
-						if(ModelConvData.findBy(jsonObject.get("eventType").getAsString()) == null) {
-							continue;
-						}
 						
 						try {
 							eventData = jsonObject.get("eventData").getAsJsonObject();
 						}catch(Exception e) {
 							logger.info("eventData Excepton[{}]", jsonObject.toString());
+						}
+						
+						if(ModelConvData.findBy(jsonObject.get("eventType").getAsString()) == null) {
+							continue;
 						}
 						
 						if(Strings.isNullOrEmpty(reqId)) {
