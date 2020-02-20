@@ -65,7 +65,7 @@ public class AvroServiceImpl implements AvroService {
                 // add arryList
                 stringArrayList.add(toString);
             } catch (JsonSyntaxException e) {
-                logger.warn("jsonSyntaxException[{}]", jsonObject);
+                e.printStackTrace();
             } finally {
                 continue;
             }
