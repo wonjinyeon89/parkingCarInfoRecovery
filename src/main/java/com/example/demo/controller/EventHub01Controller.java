@@ -35,6 +35,7 @@ public class EventHub01Controller {
 	@PostMapping("/req")
 	public ApiResponse eventHub01 (@RequestParam String dir, @RequestParam String localPath, @RequestParam(required=false) String times, @RequestParam(required=false) String reqId) {
 		
+		System.out.println("revert 진행합니다");
 		logger.info("########## Event Start ##########");
 		
 		StopWatch stopWatch = new StopWatch();
