@@ -1,6 +1,5 @@
 package com.example.demo.controller;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -34,6 +33,8 @@ public class EventHub01Controller {
 	
 	@PostMapping("/req")
 	public ApiResponse eventHub01 (@RequestParam String dir, @RequestParam String localPath, @RequestParam(required=false) String times, @RequestParam(required=false) String reqId) {
+		
+		System.out.println("revert 테스트 진행");
 		
 		logger.info("########## Event Start ##########");
 		
