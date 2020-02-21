@@ -36,6 +36,7 @@ public class EventHub01Controller {
 	public ApiResponse eventHub01 (@RequestParam String dir, @RequestParam String localPath, @RequestParam(required=false) String times, @RequestParam(required=false) String reqId) {
 		
 		logger.info("########## Event Start ##########");
+		System.out.println("custom merge");
 		
 		StopWatch stopWatch = new StopWatch();
         stopWatch.start();
