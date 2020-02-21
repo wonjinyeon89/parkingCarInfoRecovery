@@ -37,6 +37,7 @@ public class EventHub01Controller {
 		
 		logger.info("########## Event Start ##########");
 		System.out.println("master merge");
+		System.out.println("custom merge");
 		
 		StopWatch stopWatch = new StopWatch();
         stopWatch.start();
